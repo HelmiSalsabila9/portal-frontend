@@ -21,7 +21,7 @@
                   <h5>
                     <nuxt-link :to="{name: 'post-slug', params: {slug: post.slug}}" class="text-bold">{{ post.title }}</nuxt-link>
                   </h5>
-                  <b-card-text> {{ post.description.substr(0, 55) }}...</b-card-text>
+                  <b-card-text> {{ post.description.substr(0, 55) }}....</b-card-text>
                   <b-card-text>
                     <small class="text-muted mr-3"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user mr-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>{{ post.user.name }}</small>
 
